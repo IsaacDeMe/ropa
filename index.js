@@ -98,6 +98,32 @@ function calcetines(){
     document.getElementById("calcetines-categoria").style.display = "block";
 
 }
+//Mostrar buscador 
+function onbuscador(){
+    document.getElementById("input-search").style.top ="0px";
+    document.getElementById("container-input-search").style.top ="0px";
+    document.getElementById("cabezera").style.height ="55px";
+}
+//Ocultar buscador
+function offbuscador(){
+    document.getElementById("input-search").style.top ="-150px";
+    document.getElementById("container-input-search").style.top ="-160px";
+    document.getElementById("cabezera").style.height ="0px";
+}
+//Funcion mostrar mas en la subcategoria de productos
+let contador = 0;
+
+function click_icono(){
+    contador++;
+    
+    if (contador === 1) {
+        onbuscador();
+    } else if (contador === 2) {
+        offbuscador();
+        contador = 0;
+    }
+}
+
 //Buscar
 
 function buscar(){

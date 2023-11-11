@@ -30,18 +30,44 @@ a:visited{
     text-decoration: none;
 }
 
-
+                            /*CSS DE LA CABEZERA*/
+/**********************************************************************************/
+.cabezera{
+    height: 0px;
+    transition: 600ms;
+}
+/*Titulo de la cabezera*/
+.titulo-cabezera{
+    font-family: 'Times New Roman';
+    margin: center;
+    text-align: center;
+    padding: 15px 0px;
+    font-weight: lighter;
+}
+/*Icono buscar*/
+#icon-search{
+    position: absolute;
+    left: 64%;
+    top: 2.5%;
+    text-decoration: none;
+    border: none;
+    padding: 5px;
+    font-size: large;
+    background-color: #fff;
+}
                             /*CSS DEL BUSCADOR */
 /**********************************************************************************/
 .buscador{
     width: 100%;
-    background: #fff;
+    background: blueviolet;
     padding: 20px;
     padding-bottom: 10px;
     display: block;
     margin: auto;
     transition:600ms;
     position: relative;
+    top: -170px;
+    z-index: 5;
 }
 #input-search{
     display: block;
@@ -54,7 +80,9 @@ a:visited{
     position: relative;
     border: solid 1px #e1dddd;
     color: black;
-    transition: 600ms;
+    transition: 700ms;
+    top: -150px;
+    z-index: 5;
 }
 
 /*Anuncio*/
