@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscador</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <!--Java Script-->
+    <script src="index.js"></script>
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!------------------------------------------------------------------------------------------------------->
+    <div class="buscador">
+        <input type="text" onkeyup = "buscar()" id="input-search" placeholder="Buscar...">
+
+    </div>
+    
+    
+
+    <nav class="nav">
+        <button  class="si-selecionado" id="todo" onclick="todo()"  >Todo  </button>
+        <button  class="no-selecionado" id="sudaderas" onclick="sudaderas()"  >Sudaderas  </button>
+        <button  class="no-selecionado" id="camisetas"  onclick="camisetas()"   >Camisetas   </button>
+        <button  class="no-selecionado" id="pantalones-largos"  onclick="pantalones_largos()"   >Pantalones largos    </button>
+        <button  class="no-selecionado" id="pantalones-cortos" onclick="pantalones_cortos()" >pantalones-cortos  </button>
+        <button  class="no-selecionado" id="calcetines"onclick="calcetines()" >calcetines  </button>
+        
+    </nav>
+
+    <div id="anuncio1">
+        ANUNCIO
+        <button onclick="saltar_anuncio1()" id="saltar-anuncio1">saltar anuncio</button>
+    </div>
+
+
+
+
+    <div id="search-results"class="search-results">
+        <div class="categoria" id="sudaderas-categoria">
+
+
+        </div>
+
+        <div class="categoria" id="camisetas-categoria">
+
+
+        </div>
+
+        
+        
+        <div class="categoria" id="pantalones-largos-categoria">              
+            <article   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="numero-de-productos">40$</li>
+                    <li class="videos-de-productos">200 yuanes</li>   
+                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                </ul>   
+            </article >
+
+            <article   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="numero-de-productos">40$</li>
+                    <li class="videos-de-productos">200 yuanes</li>   
+                    <li><button onclick="mostrar_anuncio() / countdownAndCreateButton()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                </ul>   
+            </article >
+
+            <article   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="numero-de-productos">40$</li>
+                    <li class="videos-de-productos">200 yuanes</li>   
+                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                </ul>   
+            </article >
+
+            <article   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="numero-de-productos">40$</li>
+                    <li class="videos-de-productos">200 yuanes</li>   
+                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                </ul>   
+            </article >
+
+            <article   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="numero-de-productos">40$</li>
+                    <li class="videos-de-productos">200 yuanes</li>   
+                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                </ul>   
+            </article >
+
+
+            <article   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="numero-de-productos">40$</li>
+                    <li class="videos-de-productos">200 yuanes</li>   
+                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                </ul>   
+            </article >
+
+            <article   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="numero-de-productos">40$</li>
+                    <li class="videos-de-productos">200 yuanes</li>   
+                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                </ul>   
+            </article >
+
+            <article   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="numero-de-productos">40$</li>
+                    <li class="videos-de-productos">200 yuanes</li>   
+                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                </ul>   
+            </article >
+
+            <article   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="numero-de-productos">40$</li>
+                    <li class="videos-de-productos">200 yuanes</li>   
+                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                </ul>   
+            </article >
+        </div>
+
+
+        <div class="categoria" id="pantalones-cortos-categoria">
+
+
+        </div>
+
+        <div class="categoria" id="calcetines-categoria">
+
+
+        </div>
+       
+
+    </div>
+   
+</body>
+</html>

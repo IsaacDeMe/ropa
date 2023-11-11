@@ -1,0 +1,150 @@
+/***    Editor de tamaños de la pàgina    ***/
+
+/*Media con más de 800px*/
+@media screen and (min-width:850px){
+}
+/*Media con menos de 800px*/
+@media screen and (max-width:850px){
+}
+
+/*General*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#contenedor{
+    width: 100%;
+    max-width: 1200px;
+}
+body{
+    width:100%;
+    background-color: white;
+    height: 100%;
+
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+
+
+                            /*CSS DEL BUSCADOR */
+/**********************************************************************************/
+.buscador{
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    padding-bottom: 10px;
+    display: block;
+    margin: auto;
+    transition:600ms;
+    position: relative;
+}
+#input-search{
+    display: block;
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    outline: 0;
+    position: relative;
+    border: solid 1px #e1dddd;
+    color: black;
+    transition: 600ms;
+}
+
+/*Anuncio*/
+#anuncio1{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 500px;
+    display: none;
+    z-index: 7  ;
+    background-color: white;
+    position: fixed;
+    border: 1px solid black;
+    
+}
+
+                                          /*CSS DE TODA LA PARTE DE LOS PORDUCTOS Y LAS CATEGORIAS*/
+/**********************************************************************************/
+/*Nav*/
+.nav{
+    display: flex;
+    flex-direction: row; 
+    background-color: #e1dddd; 
+    margin-bottom: 4px; 
+}
+
+/*Titulo de la categoria junto si hover */
+/*Cuando este seleccionado hover*/
+.si-selecionado{       
+    background-color: #fff;
+    width:25%;
+    text-align: center;
+    border:none;
+    border-right: 1px solid #e1dddd ;
+    border-top:  1px solid #e1dddd;
+    box-shadow: 3 3px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.no-selecionado{
+    padding: 7px;
+    width:25%;
+    text-align: center;
+    border: 1px solid #e1dddd;
+    border: none;
+}
+/*Hover de la categoria*/
+.no-selecionado:hover{
+    background-color: #fff;
+    list-style-type: none;
+    display: inline-block;
+    border: none;
+}
+
+
+
+/*******************************************************************/
+/*Productos*/
+.producto{
+    display: block;
+    margin-bottom:10px ;
+}
+.producto>ul{
+    height: 110px;
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+}
+.producto>ul>li{
+    display: inline-block;
+    padding: 0px 50px;
+    position: relative;
+    bottom: 54px;
+
+
+}
+
+/*Imagenes*/
+.img{
+    height: 108px;
+    width: 108px;
+    display: inline;
+    margin-left: 50px;
+    padding: 3px;
+}
+/*Boton*/
+#ir-tienda{
+    background-color: white;
+    border:solid 1px black;
+    padding: 5px 5px;
+    
+}
+#ir-tienda>a{
+    color: black;
+}
