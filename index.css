@@ -34,311 +34,393 @@ a:visited{
 
 /***    Editor de tamaños de la pàgina    ***/
 
-/*Media con más de 950px*/
+/*Media cpara ordenadores muy grandes*/
+
+/******************************************************************************************************/
+/******************************************************************************************************/
+
 @media screen and (min-width:950px){
-     /*CSS DE LA CABEZERA*/
+
+/*GENERAL*/
+body{
+    font-size: 16px;
+}
+    /*CSS DE LA CABEZERA*/
 /**********************************************************************************/
 .cabezera{
-    position: relative;
+   position: relative;
 
-    background-color: #fff;
+   background-color: #fff;
 }
+
 /*Titulo de la cabezera*/
 .titulo-cabezera{
-    font-family: 'Times New Roman';
-    margin: center;
-    text-align: center;
-    padding: 15px 0px;
-    font-weight: lighter;
-    position: relative;
+   font-family: 'Times New Roman';
+   margin: center;
+   text-align: center;
+   padding: 0.9375rem 0rem;
+   font-weight: lighter;
+   position: relative;
 }
+
 /*Icono buscar*/
 #icon-search{
-    position: absolute;
-    left: 64%;
-    top: 15px;
-    text-decoration: none;
-    border: none;
-    padding: 5px;
-    font-size: large;
-    background-color: #fff;
-    
-    
+   position: absolute;
+   left: 64%;
+   top: 0.9375rem;
+   text-decoration: none;
+   border: none;
+   padding: 0.3125rem;
+   font-size: large;
+   background-color: #fff;
+   
+   
 }
+
 /*Linea*/
 #linea{
-    display: block;
-    border: 1px solid black;
-    position: relative;
-    top: 0px;
+   display: block;
+   border: 1px solid black;
+   position: relative;
+   top: 0px;
 }
-                            /*CSS DEL BUSCADOR */
+                           /*CSS DEL BUSCADOR */
 /**********************************************************************************/
 .buscador{
-    width: 100%;
-    padding: 20px;
-    display: none;
-    margin: auto;
-    position:relative;
-    background-color: #fff;
-    top: -20px;
-    height: 60px;
+   width: 100%;
+   padding: 1.25rem;
+   display: none;
+   margin: auto;
+   position:relative;
+   background-color: #fff;
+   top: -1.25rem;
+   height: 3.75rem;
 }
-
 
 #input-search{
-    display:none;
-    width: 800px;
-    left:50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    padding-bottom: 10px;
-    font-size: 16px;
-    outline: 0;
-    position: relative;
-    border: solid 1px #e1dddd;
-    color: black;
-    top: 0px;
-    background-color: #fff;
-    transition: 700ms;
+   display:none;
+   width: 50rem;
+   left:50%;
+   transform: translateX(-50%);
+   padding: 0.625rem;
+   padding-bottom: 0.625rem;
+   font-size: 1rem;
+   outline: 0;
+   position: relative;
+   border: solid 1px #e1dddd;
+   color: black;
+   top: 0px;
+   background-color: #fff;
+   transition: 700ms;
 }
-
-                                          /*CSS DE TODA LA PARTE DE LOS PORDUCTOS Y LAS CATEGORIAS*/
+                                      /*CSS DE TODA LA PARTE DE LOS PORDUCTOS Y LAS CATEGORIAS*/
 /**********************************************************************************/
 /*Nav*/
 .nav{
-    display: flex;
-    flex-direction: row; 
-    background-color: #e1dddd; 
-    margin-bottom: 4px; 
-    bottom: 100px;
-    transition: 600ms;
-    position: relative;
-    top: 00px;
+   display: flex;
+   flex-direction: row; 
+   background-color: #e1dddd; 
+   margin-bottom: 0.25rem; 
+   bottom: 6.25rem;
+   transition: 600ms;
+   position: relative;
+   top: 00px;
+}
+
+.img-portada{
+    display: none;
 }
 
 /*Titulo de la categoria junto si hover */
 /*Cuando este seleccionado hover*/
 .si-selecionado{       
-    background-color: #fff;
-    width:25%;
-    text-align: center;
-    border:none;
-    border-right: 1px solid #e1dddd ;
-    border-top:  1px solid #e1dddd;
-    box-shadow: 3 3px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-.no-selecionado{
-    padding: 7px;
-    width:25%;
-    text-align: center;
-    border: 1px solid #e1dddd;
-    border: none;
-}
-/*Hover de la categoria*/
-.no-selecionado:hover{
-    background-color: #fff;
-    list-style-type: none;
-    display: inline-block;
-    border: none;
-}
-/************************************************************************/
-.search-results{
-    margin-top: 15px;
-    background-color: #fff;
-    position: relative;
+   background-color: #fff;
+   width:25%;
+   text-align: center;
+   border:none;
+   border-right: 1px solid #e1dddd ;
+   border-top:  1px solid #e1dddd;
+   box-shadow: 3 0.1875rem 0.1875rem rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
+.no-selecionado{
+   padding: 0.4375rem;
+   width:25%;
+   text-align: center;
+   border: 1px solid #e1dddd;
+   border: none;
+}
+
+/*Hover de la categoria*/
+.no-selecionado:hover{
+   background-color: #fff;
+   list-style-type: none;
+   display: inline-block;
+   border: none;
+}
+
+/************************************************************************/
+.search-results{
+   margin-top: 0.9375rem;
+   background-color: #fff;
+   position: relative;
+}
 
 /*******************************************************************/
 /*Productos*/
 .producto{
-    display: block;
-    margin-bottom:10px ;
-    position: relative;
-    background-color: #fff;
-}
-.producto>ul{
-    height: 110px;
-    border: 1px solid black;
-    width: 80%;
-    margin: auto;
-}
-.producto>ul>li{
-    display: inline-block;
-    padding: 0px 50px;
-    position: relative;
-    bottom: 54px;
+   display: block;
+   margin-bottom:0.625rem ;
+   position: relative;
+   background-color: #fff;
 }
 
+.producto>ul{
+   height: 6.875rem;
+   border: 1px solid black;
+   width: 80%;
+   margin: auto;
+}
+
+.producto>ul>li{
+   display: inline-block;
+   padding: 0rem 3.125rem;
+   position: relative;
+   bottom: 3.375rem;
+}
 /*Imagenes*/
 .img{
-    height: 108px;
-    width: 108px;
-    display: inline;
-    margin-left: 50px;
-    padding: 3px;
-    position: relative;
+   height: 6.75rem;
+   width: 6.75rem;
+   display: inline;
+   margin-left: 3.125rem;
+   padding: 0.1875rem;
+   position: relative;
 }
+
 /*Boton*/
 #ir-tienda{
-    border:solid 1px black;
-    padding: 5px 5px;
-    position: relative;
-    left: 5%;
-    bottom: 45%;
-    background-color: #fff;
+   border:solid 1px black;
+   padding: 0.3125rem 0.3125rem;
+   position: relative;
+   left: 5%;
+   bottom: 45%;
+   background-color: #fff;
 }
+
 #ir-tienda>a{
-    color: black;
+   color: black;
 }
+
 }
 /******************************************************************************************************/
 /******************************************************************************************************/
-
-
 
 /*Media con menos de 950px*/
 @media screen and (max-width:950px){
-
-    /*******************************************CABEZERA***********************************************/
+body{
+    font-size: 14px;
+}
+   /*******************************************CABEZERA***********************************************/
 /*Cabezera*/
 .cabezera{
-    padding: 10px;
-    background-color: #fff;
-    width: 70%;
-    margin-left:32%;
-    position: relative;
-    text-align: center;
-    
-}
-/*Titulo de la pagina*/
-.titulo-cabezera{
-    width: 68%;
-    margin-left:15%;
-    display: block;
-    font-family: Times new roman;
-    font-weight: lighter;
-    
+   padding: 0.625rem;
+   background-color: #fff;
+   width: 70%;
+   margin-left:32%;
+   position: relative;
+   text-align: center;
+   
 }
 
+/*Titulo de la pagina*/
+.titulo-cabezera{
+   width: 68%;
+   margin-left:15%;
+   display: block;
+   font-family: Times new roman;
+   font-weight: lighter;
+   
+}
 
 /************************************************************NAV*********************/
 .nav{
-    display: block;
-    width: 30%;
-    height:100%;
-    position: fixed;
-    background-color: #e1dddd;
-    border-right: 1px solid black;
-}
-.nav>button{
-    display: block;
-    text-align : center;
-    width: 100%;
-    border: none;
-    margin: 0px;
-    padding: 15px 0px;
-    border-top: 1px solid   black;
+   display: block;
+   width: 30%;
+   height:100%;
+   position: fixed;
+   background-color: #e1dddd;
+   border-right: 1px solid black;
 }
 
+.nav>button{
+   display: block;
+   text-align : center;
+   width: 100%;
+   border: none;
+   margin: 0rem;
+   padding: 0.9375rem 0rem;
+   border-top: 1px solid   black;
+}
+
+.img-portada{
+    display: none;
+}
 
 /************ICON SEARCH**************/
 #icon-search{
-    position: fixed;
-    left: 0%;
-    width: 30%;
-    top: 0.4%;
-    border:none;
-    border-right: 1px solid black;
-    padding: 15px 0px;
+   position: fixed;
+   left: 0%;
+   width: 30%;
+   top: 0.4%;
+   border:none;
+   border-right: 1px solid black;
+   padding: 0.9375rem 0rem;
 }
+
 /**********************ESTILOS PARA EL SI SELECIONADO DE LOS BOTONES NAV*********/
 .si-selecionado{       
-    background-color: #e1dddd;
-    text-align: center;
-    border:none;
-    border-right: 1px solid #e1dddd ;
-    border-top:  1px solid #e1dddd;
-    box-shadow: 3 3px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+   background-color: #e1dddd;
+   text-align: center;
+   border:none;
+   border-right: 1px solid #e1dddd ;
+   border-top:  1px solid #e1dddd;
+   box-shadow: 3 0.1875rem 0.1875rem rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
+
 .no-selecionado{
-    text-align: center;
-    border: 1px solid #fff;
-    border: none;
+   text-align: center;
+   border: 1px solid #fff;
+   border: none;
 }
 
 /********************************************BUSCADOR*******************/
 .buscador{
-    position: absolute;
-    display: none;
-    background-color: #fff;
-    width: 70%;
-    margin-left:32%; 
-    padding: 10px 2px;
+   position: absolute;
+   display: none;
+   background-color: #fff;
+   width: 70%;
+   margin-left:32%; 
+   padding: 0.625rem 0.125rem;
 }
+
 #input-search{
-    display: none;
-    width: 90%;
-    margin: auto;
-    padding: 5px;
+   display: none;
+   width: 90%;
+   margin: auto;
+   padding: 0.3125rem;
 }
+
 /*******************************************PRODUCTOS**********************************/
 .search-results{
-    margin-top: 10px;
-    margin-left: 32%;
-    background-color: #fff;
-    list-style-type: none;
+   margin-top: 0.625rem;
+   margin-left: 32%;
+   background-color: #fff;
+   list-style-type: none;
 }
+
 /*Producto*/
 .producto{
-    background-color: #fff;
-    position: relative;
-    border: 1px solid black;
-    width: 90%;
-    margin: auto;
-    list-style-type: none;
+   background-color: #fff;
+   position: relative;
+   border: 1px solid black;
+   width: 90%;
+   margin: auto;
+   list-style-type: none;
 }
+
 .nombre-de-producto{
-    display: inline;
-    position: relative;
-    bottom: 60px;
+   display: inline;
+   position: relative;
+   bottom: 3.75rem;
+}
+
+.precio-de-productos{
+   display: inline;
+   position: relative;
+   bottom: 1.875rem;
+   right: 5.9375rem;
+}
+
+#ir-tienda{
+   display: inline;
+   position: relative;
+   bottom: 3.125rem;
+   right: 5%;
+   padding: 0.3125rem 0.625rem;
+   color: black;
+   border: 1px solid black;
+}
+
+.img{
+   margin-top: 3%;
+   margin-left: 3%;
+   width: 20%;
+   height:6.25rem;
+   display:  inline    ;
+   position: relative;
+}
+
+}
+
+/**********************************************************************************************/
+
+@media screen and (max-width:730px){
+body{
+    font-size: 12px;
 }
 .precio-de-productos{
     display: inline;
     position: relative;
-    bottom: 30px;
-    right: 109px;
-}
-#ir-tienda{
-    display: inline;
-    position: relative;
-    bottom: 50px;
-    right: 5%;
-    padding: 5px 10px;
-    color: black;
-    border: 1px solid black;
-}
-.img{
-    margin-top: 3%;
-    margin-left: 3%;
-    width: 20%;
-    height:100px;
-    display:  inline    ;
-    position: relative;
+    bottom: 1.875rem;
+    right: 5.3125rem;
+ }
+.img-portada{
+    display: none;
+ }
 }
 
+/*********************************************************************************************/
+@media screen and (max-width:600px){
+    body{
+        font-size: 12px;
+    }
+/*Indice */
+    .nav>button{
+        font-size: 1px;
+        height: 70px;
+    }
+/*Imagenes portada*/
+    .img-portada{
+        display: inline;
+        width: 60px;
+        height: 65px;
+        position: fixed;
+        margin-left: 1%;
+    }
+    #img-sudadera{
+       bottom: 19.375rem;
+       left: 2.5rem;
+    }
+    #img-camiseta{
+        bottom: 15rem;
+        left: 2.5rem;
+    }
+    #img-pantalones-largos{
+        bottom: 10.625rem;
+        left: 2.5rem;
+    }
+    #img-pantalones-cortos{
+        bottom: 6.25rem;
+        left: 2.5rem;
+    }
+    #img-calcetines{
+        bottom: 1.875rem;
+        left: 2.5rem;
+    }
 
-
-}
-
-
-
-
-
-@media screen and (max-width:700px){
-
-}
-@media screen and (min-width:200px){
-
-}
+    /*Boton de ir a la tienda*/
+    #ir-tienda{
+        right: 20%;
+    }
+    }
