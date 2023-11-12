@@ -98,94 +98,98 @@ function calcetines(){
     document.getElementById("calcetines-categoria").style.display = "block";
 
 }
-//Mostrar buscador 
-function onbuscador(){
-    document.getElementById("input-search").style.top ="0px";
-    document.getElementById("container-input-search").style.top ="0px";
-    document.getElementById("cabezera").style.height ="55px";
-}
-//Ocultar buscador
-function offbuscador(){
-    document.getElementById("input-search").style.top ="-150px";
-    document.getElementById("container-input-search").style.top ="-160px";
-    document.getElementById("cabezera").style.height ="0px";
-}
-//Funcion mostrar mas en la subcategoria de productos
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//Funcion mostrar buscador
 let contador = 0;
 
 function click_icono(){
     contador++;
-    
     if (contador === 1) {
         onbuscador();
     } else if (contador === 2) {
         offbuscador();
         contador = 0;
-    }
+    } 
 }
+
+
+//Mostrar buscador 
+function onbuscador(){
+    //Display block en el buscador
+    document.getElementById("input-search").style.display="block";
+    document.getElementById("container-input-search").style.display="block";
+    //Estilos de subir y bajar cosas
+    document.getElementById("input-search").focus();
+    document.getElementById("search-results").style.marginTop = "50px"
+} 
+//Ocultar buscador
+
+function offbuscador(){
+    //Display none en el buscador
+    document.getElementById("input-search").style.display="none";
+    document.getElementById("container-input-search").style.display="none";
+    //Estilos de subir y bajar cosas
+    document.getElementById("search-results").style.marginTop = "10px"
+    document.getElementById("input-search").value = "";
+}
+
 
 //Buscar
 
 function buscar(){
-    // Obtener el valor del input
     var inputValue = document.getElementById("input-search").value;
-    // Obtener todos los elementos li de la página
     var lis = document.getElementsByTagName("li");
-    // Crear una variable para almacenar los elementos li que tienen el mismo valor que el input
     var matchingLis = [];
 
-    // Recorrer todos los elementos li
     for (var i = 0; i < lis.length; i++) {
-    // Si el valor del input es igual al valor del elemento li, añadir el elemento li a la variable matchingLis
-    if (inputValue == lis[i].innerHTML) {
-    matchingLis.push(lis[i]);
-    }
+        if (inputValue == lis[i].innerHTML) {
+            matchingLis.push(lis[i]);
+        }
     } 
-    // Mostrar los elementos li que tienen el mismo valor que el input
+
     for (var i = 0; i < matchingLis.length; i++) {
-    matchingLis[i].style.backgroundColor ="red";
+        var article = matchingLis[i].parentElement.parentElement;
+        article.style.backgroundColor ="red";
     }
 
-    // Quitar el background color cuando no es el mismo   
-
+    // Quitar el background color cuando no es el mismo
     var input = document.getElementById("input-search");
     var li_results = document.getElementById("search-results").getElementsByTagName("li");
     if (input.value === "") {
-        //Condicion de que cuando no hay nada en el input 
-      for (var i = 0; i < li_results.length; i++) {
-        //Se ponga un background color blanco
-        li_results[i].style.backgroundColor = "white";
-      }
-    } else {
-        //Condicion de que si en el input hay un valor ejecute
         for (var i = 0; i < li_results.length; i++) {
-        if (li_results[i].innerHTML.toLowerCase().indexOf(input.value.toLowerCase()) > -1) {
-            //Un subrayado rojo
-            li_results[i].style.backgroundColor = "red";
-            
-        } else {
-            //Si ninguna de las dos es el caso 
-            //Se ponga un background color blanco
             li_results[i].style.backgroundColor = "white";
         }
+    } else {
+        for (var i = 0; i < li_results.length; i++) {
+            if (li_results[i].innerHTML.toLowerCase().indexOf(input.value.toLowerCase()) > -1) {
+                li_results[i].style.backgroundColor = "red";
+                
+            } else {
+                li_results[i].style.backgroundColor = "white";
+            }
         }
-        // Seleccionar todos los artículos
-        var articles = document.getElementsByTagName("article");
 
-        // Cambiar la propiedad display de cada artículo
+        var articles = document.getElementsByTagName("article");
 
         if(document.getElementById("input-search").value === ""){
             for(var i = 0; i < articles.length; i++){
-                articles[i].style.display = "none";
+                articles[i].style.backgroundColor = "white";
             }
         } else{
             for (var i = 0; i < articles.length; i++) {
-                articles[i].style.display = "block"; 
+                articles[i].style.backgroundColor = "red"; 
             }
         }
         
     }
-     
 }
 
 

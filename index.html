@@ -15,9 +15,11 @@
     <!------------------------------------------------------------------------------------------------------->
     <div id="cabezera" class="cabezera">
         <h2 class="titulo-cabezera" >PROVEDORES DE ROPA</h2>
-        <button id="icon-search" onclick="click_icono()" class="fas fa-1x fa-search"></button>
+        <button id="icon-search" onclick = "click_icono()" class="fas fa-1x fa-search" ></button>
     </div>
-    
+
+
+
     <div class="buscador" id="container-input-search">
         <input type="text" onkeyup = "buscar()" id="input-search" placeholder="Buscar...">
 
@@ -25,20 +27,19 @@
     
     
 
-    <nav class="nav">
-        <button  class="si-selecionado" id="todo" onclick="todo()"  >Todo  </button>
-        <button  class="no-selecionado" id="sudaderas" onclick="sudaderas()"  >Sudaderas  </button>
-        <button  class="no-selecionado" id="camisetas"  onclick="camisetas()"   >Camisetas   </button>
-        <button  class="no-selecionado" id="pantalones-largos"  onclick="pantalones_largos()"   >Pantalones largos    </button>
-        <button  class="no-selecionado" id="pantalones-cortos" onclick="pantalones_cortos()" >pantalones-cortos  </button>
-        <button  class="no-selecionado" id="calcetines"onclick="calcetines()" >calcetines  </button>
+    <nav class="nav" id="nav">
+        <button  class="si-selecionado" id="todo" onclick="todo()"  >TODO  </button>
+        <button  class="no-selecionado" id="sudaderas" onclick="sudaderas()"  >SUDADERAS  </button>
+        <button  class="no-selecionado" id="camisetas"  onclick="camisetas()"   >CAMISETAS  </button>
+        <button  class="no-selecionado" id="pantalones-largos"  onclick="pantalones_largos()"   >PANTALONES LARGOS   </button>
+        <button  class="no-selecionado" id="pantalones-cortos" onclick="pantalones_cortos()" >PANTALONES CORTOS  </button>
+        <button  class="no-selecionado" id="calcetines"onclick="calcetines()" >CALCETINES  </button>
         
     </nav>
 
-    <div id="anuncio1">
-        ANUNCIO
+    <span id="anuncio1">
         <button onclick="saltar_anuncio1()" id="saltar-anuncio1">saltar anuncio</button>
-    </div>
+    </span>
 
 
 
@@ -57,98 +58,135 @@
         
         
         <div class="categoria" id="pantalones-largos-categoria">              
-            <article   class="producto">
+            <div   class="producto">
                 <ul>
                     <img src="img-web-ropa/pantalones.webp" class="img">
                     <li class="nombre-de-producto">Pantalones Nike</li>
-                    <li class="numero-de-productos">40$</li>
-                    <li class="videos-de-productos">200 yuanes</li>   
-                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
                 </ul>   
-            </article >
-
-            <article   class="producto">
+            </div >
+            <div   class="producto">
                 <ul>
                     <img src="img-web-ropa/pantalones.webp" class="img">
                     <li class="nombre-de-producto">Pantalones Nike</li>
-                    <li class="numero-de-productos">40$</li>
-                    <li class="videos-de-productos">200 yuanes</li>   
-                    <li><button onclick="mostrar_anuncio() / countdownAndCreateButton()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
                 </ul>   
-            </article >
-
-            <article   class="producto">
+            </div >
+            <div   class="producto">
                 <ul>
                     <img src="img-web-ropa/pantalones.webp" class="img">
                     <li class="nombre-de-producto">Pantalones Nike</li>
-                    <li class="numero-de-productos">40$</li>
-                    <li class="videos-de-productos">200 yuanes</li>   
-                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
                 </ul>   
-            </article >
+            </div >
 
-            <article   class="producto">
+            <div   class="producto">
                 <ul>
                     <img src="img-web-ropa/pantalones.webp" class="img">
                     <li class="nombre-de-producto">Pantalones Nike</li>
-                    <li class="numero-de-productos">40$</li>
-                    <li class="videos-de-productos">200 yuanes</li>   
-                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
                 </ul>   
-            </article >
+            </div >
 
-            <article   class="producto">
+            <div   class="producto">
                 <ul>
                     <img src="img-web-ropa/pantalones.webp" class="img">
                     <li class="nombre-de-producto">Pantalones Nike</li>
-                    <li class="numero-de-productos">40$</li>
-                    <li class="videos-de-productos">200 yuanes</li>   
-                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
                 </ul>   
-            </article >
-
-
-            <article   class="producto">
+            </div >
+            <div   class="producto">
                 <ul>
                     <img src="img-web-ropa/pantalones.webp" class="img">
                     <li class="nombre-de-producto">Pantalones Nike</li>
-                    <li class="numero-de-productos">40$</li>
-                    <li class="videos-de-productos">200 yuanes</li>   
-                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
                 </ul>   
-            </article >
+            </div >
 
-            <article   class="producto">
+            <div   class="producto">
                 <ul>
                     <img src="img-web-ropa/pantalones.webp" class="img">
                     <li class="nombre-de-producto">Pantalones Nike</li>
-                    <li class="numero-de-productos">40$</li>
-                    <li class="videos-de-productos">200 yuanes</li>   
-                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
                 </ul>   
-            </article >
+            </div >
 
-            <article   class="producto">
+
+            <div   class="producto">
                 <ul>
                     <img src="img-web-ropa/pantalones.webp" class="img">
                     <li class="nombre-de-producto">Pantalones Nike</li>
-                    <li class="numero-de-productos">40$</li>
-                    <li class="videos-de-productos">200 yuanes</li>   
-                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
                 </ul>   
-            </article >
+            </div >
 
-            <article   class="producto">
+            <div   class="producto">
                 <ul>
                     <img src="img-web-ropa/pantalones.webp" class="img">
                     <li class="nombre-de-producto">Pantalones Nike</li>
-                    <li class="numero-de-productos">40$</li>
-                    <li class="videos-de-productos">200 yuanes</li>   
-                    <li><button onclick="mostrar_anuncio()" id="ir-tienda"><a href="#">Ir a la tienda</a></button></li>                    
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
                 </ul>   
-            </article >
-        </div>
+            </div >
+            <div   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
+                </ul>   
+            </div >
+            <div   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
+                </ul>   
+            </div >
 
+            <div   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
+                </ul>   
+            </div >
+            <div   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
+                </ul>   
+            </div >
+            <div   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
+                </ul>   
+            </div >
+            <div   class="producto">
+                <ul>
+                    <img src="img-web-ropa/pantalones.webp" class="img">
+                    <li class="nombre-de-producto">Pantalones Nike</li>
+                    <li class="precio-de-productos">40$ / 200 yuanes</li>
+                    <button onclick="mostrar_anuncio()" id="ir-tienda">Ir a la tienda</button>                    
+                </ul>   
+            </div >
+
+        </div>    
 
         <div class="categoria" id="pantalones-cortos-categoria">
 
@@ -162,6 +200,10 @@
        
 
     </div>
-   
+    <script>
+        // Función que se ejecutará al cambiar el ancho de la pagina
+        width();
+
+    </script>
 </body>
 </html>
