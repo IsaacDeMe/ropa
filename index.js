@@ -207,3 +207,7 @@ function saltar_anuncio1(){
     
 }
 
+function mostrar_nav(){
+    document.getElementById("nav").style.display = "block";
+    document.getElementById("nav").style.position = "fixed";
+}
