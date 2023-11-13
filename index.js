@@ -14,7 +14,8 @@ function todo(){
     document.getElementById("pantalones-cortos-categoria").style.display = "block";
     document.getElementById("calcetines-categoria").style.display = "block";
 
-
+    //Quitar el nav
+    document.getElementById("nav").style.display = "none";
 }
 //Sudaderas
 function sudaderas(){
@@ -30,7 +31,8 @@ function sudaderas(){
     document.getElementById("pantalones-largos-categoria").style.display = "none";
     document.getElementById("pantalones-cortos-categoria").style.display = "none";
     document.getElementById("calcetines-categoria").style.display = "none";
-
+    //Quitar el nav
+    document.getElementById("nav").style.display = "none";
 }
 //Camisetas
 function camisetas(){
@@ -46,7 +48,8 @@ function camisetas(){
     document.getElementById("pantalones-largos-categoria").style.display = "none";
     document.getElementById("pantalones-cortos-categoria").style.display = "none";
     document.getElementById("calcetines-categoria").style.display = "none";
-
+    //Quitar el nav
+    document.getElementById("nav").style.display = "none";
 }
 
 //Pantalones largos
@@ -63,7 +66,8 @@ function pantalones_largos(){
     document.getElementById("pantalones-largos-categoria").style.display = "block";
     document.getElementById("pantalones-cortos-categoria").style.display = "none";
     document.getElementById("calcetines-categoria").style.display = "none";
-
+    //Quitar el nav
+    document.getElementById("nav").style.display = "none";
 }
 
 //Pantalones cortos
@@ -80,7 +84,8 @@ function pantalones_cortos(){
     document.getElementById("pantalones-largos-categoria").style.display = "none";
     document.getElementById("pantalones-cortos-categoria").style.display = "block";
     document.getElementById("calcetines-categoria").style.display = "none";
-
+    //Quitar el nav
+    document.getElementById("nav").style.display = "none";
 }
 //Calcetines
 function calcetines(){
@@ -96,7 +101,8 @@ function calcetines(){
     document.getElementById("pantalones-largos-categoria").style.display = "none";
     document.getElementById("pantalones-cortos-categoria").style.display = "none";
     document.getElementById("calcetines-categoria").style.display = "block";
-
+    //Quitar el nav
+    document.getElementById("nav").style.display = "none";
 }
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -111,6 +117,7 @@ function calcetines(){
 let contador = 0;
 
 function click_icono(){
+    document.getElementById("nav").style.display = "none";
     contador++;
     if (contador === 1) {
         onbuscador();
@@ -137,7 +144,7 @@ function offbuscador(){
     document.getElementById("input-search").style.display="none";
     document.getElementById("container-input-search").style.display="none";
     //Estilos de subir y bajar cosas
-    document.getElementById("search-results").style.marginTop = "10px"
+    document.getElementById("search-results").style.marginTop = "80px"
     document.getElementById("input-search").value = "";
 }
 

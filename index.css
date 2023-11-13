@@ -37,7 +37,7 @@ a:visited{
 
 /******************************************************************************************************/
 /*Media con menos de 950px*/
-@media screen and (min-width:950px){
+@media screen and (min-width:1100px){
 body{
     font-size: 14px;
 }
@@ -66,8 +66,8 @@ body{
 
 /************************************************************NAV*********************/
 .nav{
-    position: fixed;
-   display: inline;
+   position: fixed;
+   display: block;
    width: 15%;
    top:0%;
    height:100%;
@@ -200,7 +200,7 @@ body{
 }
 /**********************************************************************************************/
 
-@media screen and (max-width:950px){
+@media screen and (max-width:1100px){
     body{
         font-size: 14px;
     }
@@ -363,168 +363,143 @@ body{
 }
 
 /*********************************************************************************************/
-@media screen and (max-width:650px){
-    body{
-        font-size: 14px;
-    }
-       /*******************************************CABEZERA***********************************************/
-    /*Cabezera*/
-    .cabezera{
-       padding: 0.625rem;
-       background-color: #e1d;
-       width: 100%;
-       position:fixed;
-       text-align: center;
-       
-    }
-    
-    /*Titulo de la pagina*/
-    .titulo-cabezera{
-        margin: auto;
-        margin-top: 0.9375rem;
-        display: block;
-        font-family: Times new roman;
-        font-weight: lighter;
-       
-    }
-    
-    /************************************************************NAV*********************/
-    .nav{
-        position:absolute;
-        display: none;
-        width: 20%;
-        top:0%;
-        height:100%;
-        background-color: #fff;
-        border-right: 1px solid black;
-        z-index: 8;
-    }
-    
-    .nav>button{    
-       display: block;
-       text-align : center;
-       width: 100%;
-       border: none;
-       margin: 0rem;
-       padding: 0.9375rem 0rem;
-       border-top: 1px solid   black;
-    }
-    #todo{
-        margin-top: 32%;
-    }
-    .img-portada{
-        display: none;
-    }
-    
-    /************ICON SEARCH**************/
-    #icon-search{
-        position: absolute;
-        left: 68%;
-        top: 1.5rem;
-        text-decoration: none;
-        border: none;
-        padding: 0.3125rem;
-        font-size: large;
-        background-color: #fff;
-    }
-    
-    /**********************ESTILOS PARA EL SI SELECIONADO DE LOS BOTONES NAV*********/
-    .si-selecionado{       
-       background-color: #e1dddd;
-       text-align: center;
-       border:none;
-       border-right: 1px solid #e1dddd ;
-       border-top:  1px solid #e1dddd;
-       box-shadow: 3 0.1875rem 0.1875rem rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    }
-    
-    .no-selecionado{
-       text-align: center;
-       border: 1px solid #fff;
-       border: none;
-       background-color: #fff;
-    }
-    
-    /********************************************BUSCADOR*******************/
-    .buscador{
-       position: relative;
-       display: none;
-       width: 100%;
-       padding: 0.625rem 0.125rem;
-    }
-    
-    #input-search{
-       display: none;
-       width: 70%;
-       margin: auto;
-       padding: 0.625rem 0.625rem;
-    }
-    
-    /*******************************************PRODUCTOS**********************************/
-    .search-results{
-        width: 90%;
-        margin-top: 50%;
-        margin: auto;
-        list-style-type: none;
-        column-count: 1; 
-        margin-top: 0.625rem;
-    }
-    
-    /*Producto*/
-    .producto{
-       background-color: #fff;
-       position: relative;
-       border: 1px solid black;
-       width: 100%;
-       margin: auto;
-       margin-bottom: 0.625rem;
-       list-style-type: none;
-    }
-    /*Las cosas de dentro del producto*/
-    .info-producto{
-        width: 90%;
-        margin: auto;
-    }
-    
-    .nombre-de-producto{
-       display: inline;
-       position: relative;
-       bottom: 3.75rem;
-    }
-    
-    .precio-de-productos{
-       display: inline;
-       position: relative;
-       bottom: 1.875rem;
-       right: 5.9375rem;
-    }
-    
-    #ir-tienda{
-       display: inline;
-       position: absolute;
-       bottom: 2.5rem;
-       right: 10%;
-       padding: 0.3125rem 0.625rem;
-       color: black;
-       border: 1px solid black;
-    }
-    
-    .img{
-       margin-top: 1%;
-       margin-left: 3%;
-       margin-right: 1.25rem;
-       width: 10%;
-       height:80px;
-       display:  inline    ;
-       position: relative;
-    }
-    /*ICONO DE BARRAS*/
-    #icono-barras{
-        display: block;
-        position:fixed;
-        font-size: 30px;
-        top: 3%;
-        left: 5%;
-        z-index: 9;
-    }
+@media screen and (max-width:700px){
+   /*Cabezera*/
+   .cabezera{
+      background-color: #fff;
+      height: 60px;
+      position: fixed;
+      z-index: 6;
+      top: 0px;
+   }
+   .titulo-cabezera{
+      top:0.4%;
+      left: 0px;
+      display: inline;
+      position: fixed;
+   }
+
+   /*Nav*/
+   .nav{
+      width: 30%;
+      position: fixed;
+      display: none;
+      z-index: 6;
+      margin-top: 60px;
+   }
+
+   /*Icon search*/
+   #icon-search{
+      position: fixed;
+      display: inline;
+      left: 80%;
+      top: 2.5%;
+
+   }
+   /*Barras icono*/
+   #icono-barras{
+      display: inline;
+      position: fixed;
+      left: 0%;
+      top: 0%;
+      font-size: 20.2px ;
+      width: 20%;
+      background-color: #fff;
+      padding: 20px;
+   }
+
+   /*Buscador*/
+   .buscador{
+      background-color:#fff;
+      width: 90%;
+      margin: auto;
+      margin-top: 60px;
+   }
+   #input-search{
+      width: 90%;
+      margin: auto;
+   }
+   /*Resultados de busqueda*/
+   .search-results{
+      position: relative;
+      display: block;
+      width: 100%;
+      margin-left: 0%;
+      margin-top: 70px;
+   }
+
+}
+
+
+@media screen and (max-width:430){
+   /*Cabezera*/
+   .cabezera{
+      background-color: #ed1;
+      height: 60px;
+      position: fixed;
+      z-index: 6;
+      top: 0px;
+   }
+   .titulo-cabezera{
+      top:0.4%;
+      left: 0px;
+      display: inline;
+      position: fixed;
+   }
+
+   /*Nav*/
+   .nav{
+      width: 30%;
+      position: fixed;
+      display: none;
+      z-index: 6;
+      margin-top: 60px;
+   }
+
+   /*Icon search*/
+   #icon-search{
+      position: fixed;
+      display: inline;
+      left: 80%;
+      top: 2.5%;
+
+   }
+   /*Barras icono*/
+   #icono-barras{
+      display: inline;
+      position: fixed;
+      left: 0%;
+      top: 0%;
+      font-size: 20.2px ;
+      width: 150px;
+      background-color: #ed1221;
+      padding: 20px;
+   }
+
+   /*Buscador*/
+   .buscador{
+      background-color: red;
+      width: 90%;
+      margin: auto;
+      margin-top: 60px;
+   }
+   #input-search{
+      width: 90%;
+      margin: auto;
+   }
+   /*Resultados de busqueda*/
+   .search-results{
+      position: relative;
+      display: block;
+      width: 100%;
+      margin-left: 0%;
+      margin-top: 70px;
+   }
+
+}
+
+
+
+.search-results{
+   padding: 0px;
 }
