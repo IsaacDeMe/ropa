@@ -13,9 +13,9 @@ function todo(){
     document.getElementById("pantalones-largos-categoria").style.display = "block";
     document.getElementById("pantalones-cortos-categoria").style.display = "block";
     document.getElementById("calcetines-categoria").style.display = "block";
-
-    //Quitar el nav
-    document.getElementById("nav").style.display = "none";
+    //QUITAR NAV
+    ocultar_nav();
+    
 }
 //Sudaderas
 function sudaderas(){
@@ -31,8 +31,8 @@ function sudaderas(){
     document.getElementById("pantalones-largos-categoria").style.display = "none";
     document.getElementById("pantalones-cortos-categoria").style.display = "none";
     document.getElementById("calcetines-categoria").style.display = "none";
-    //Quitar el nav
-    document.getElementById("nav").style.display = "none";
+    //QUITAR NAV
+    ocultar_nav();
 }
 //Camisetas
 function camisetas(){
@@ -48,8 +48,8 @@ function camisetas(){
     document.getElementById("pantalones-largos-categoria").style.display = "none";
     document.getElementById("pantalones-cortos-categoria").style.display = "none";
     document.getElementById("calcetines-categoria").style.display = "none";
-    //Quitar el nav
-    document.getElementById("nav").style.display = "none";
+    //QUITAR NAV
+    ocultar_nav();
 }
 
 //Pantalones largos
@@ -66,8 +66,8 @@ function pantalones_largos(){
     document.getElementById("pantalones-largos-categoria").style.display = "block";
     document.getElementById("pantalones-cortos-categoria").style.display = "none";
     document.getElementById("calcetines-categoria").style.display = "none";
-    //Quitar el nav
-    document.getElementById("nav").style.display = "none";
+    //QUITAR NAV
+    ocultar_nav();
 }
 
 //Pantalones cortos
@@ -84,8 +84,8 @@ function pantalones_cortos(){
     document.getElementById("pantalones-largos-categoria").style.display = "none";
     document.getElementById("pantalones-cortos-categoria").style.display = "block";
     document.getElementById("calcetines-categoria").style.display = "none";
-    //Quitar el nav
-    document.getElementById("nav").style.display = "none";
+    //QUITAR NAV
+    ocultar_nav();
 }
 //Calcetines
 function calcetines(){
@@ -101,8 +101,8 @@ function calcetines(){
     document.getElementById("pantalones-largos-categoria").style.display = "none";
     document.getElementById("pantalones-cortos-categoria").style.display = "none";
     document.getElementById("calcetines-categoria").style.display = "block";
-    //Quitar el nav
-    document.getElementById("nav").style.display = "none";
+    //QUITAR NAV
+    ocultar_nav();
 }
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -122,7 +122,7 @@ function click_icono(){
     if (contador === 1) {
         onbuscador();
     } else if (contador === 2) {
-        offbuscador();
+        onbuscador();
         contador = 0;
     } 
 }
@@ -130,21 +130,29 @@ function click_icono(){
 
 //Mostrar buscador 
 function onbuscador(){
-    //Display block en el buscador
-    document.getElementById("input-search").style.display="block";
-    document.getElementById("container-input-search").style.display="block";
-    //Estilos de subir y bajar cosas
-    document.getElementById("input-search").focus();
-    document.getElementById("search-results").style.marginTop = "50px"
+    if(document.getElementById("nav").style.left === "0%"){
+        document.getElementById("nav").style.left = "-100%";
+        document.getElementById("ctn").style.display = "none";
+        //Display block en el buscador
+        document.getElementById("container-input-search").style.top="10vh";
+        //Estilos de subir y bajar cosas
+        document.getElementById("input-search").focus();
+
+        document.getElementById("ctn").style.display = "block";
+
+    } else{
+        document.getElementById("container-input-search").style.top="10vh";
+        //Estilos de subir y bajar cosas
+        document.getElementById("input-search").focus();
+        document.getElementById("ctn").style.display = "block";
+    }
 } 
 //Ocultar buscador
 
 function offbuscador(){
     //Display none en el buscador
-    document.getElementById("input-search").style.display="none";
-    document.getElementById("container-input-search").style.display="none";
+    document.getElementById("container-input-search").style.top="0vh";
     //Estilos de subir y bajar cosas
-    document.getElementById("search-results").style.marginTop = "80px"
     document.getElementById("input-search").value = "";
 }
 
@@ -201,6 +209,33 @@ function buscar(){
 
 
 
+function mostrar_nav(){
+    if(document.getElementById("container-input-search").style.top="10vh"){
+        document.getElementById("container-input-search").style.top = "0vh";
+        //MOSTRAR NAV
+        document.getElementById("ctn").style.display = "block";
+        document.getElementById("nav").style.left = "0%";
+        document.getElementById("nav").style.display = "block";
+
+    } else{
+        document.getElementById("nav").style.left = "0%";
+        document.getElementById("ctn").style.display = "block";
+    }
+
+  
+}
+
+function ocultar_nav(){
+    document.getElementById("nav").style.left = "-100%";
+    document.getElementById("ctn").style.display = "none";
+
+}
+
+
+
+
+
+
 
 //Mostrar anuncio
 const button = document.getElementById('saltar-anuncio1');
@@ -212,9 +247,4 @@ function mostrar_anuncio(){
 function saltar_anuncio1(){
     document.getElementById("anuncio1").style.display = "none";
     
-}
-
-function mostrar_nav(){
-    document.getElementById("nav").style.display = "block";
-    document.getElementById("nav").style.position = "fixed";
 }
