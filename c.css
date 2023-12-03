@@ -1,0 +1,142 @@
+/*CABEZERA */
+.cabezera{
+    width: 100%;
+    margin: auto;
+    display: block;
+    position: fixed;
+    background-color: red;
+    height: 8%;
+    z-index: 7;
+}
+/*TITULO DE LA CABEZERA*/
+.titulo-cabezera{
+    display: inline;
+    left: 50%;
+    top: -1.5%;
+    transform: translate(-50%);
+    background-color: blue;
+    position: fixed;
+    text-align: center;
+    font-size: 4rem;
+}
+/*ICONO PARA BUSCAR*/
+#icon-search{
+    position: fixed;
+    display: inline;
+    left: 84%;
+    font-size: 5rem;
+    top: 2.3%;
+    background-color: red;
+    border: none;
+}
+/*ICONO DE LAS BARRAS*/
+#icono-barras{
+    position: fixed;
+    display: inline;
+    font-size: 1.4rem;
+    top: 2.7vh;
+    left: 5%;
+}
+/*************************NAVEGADOR*****************************/
+/*NAVEGADOR*/
+.nav{
+    display: block;
+    position: fixed;
+    height: 90%;
+    left: -100%;
+    width: 30%;
+    top: 2vh;
+    background-color: aqua;
+    margin-top: 5%;
+    z-index: 6;
+    transition: 300ms;
+}
+/*BOTONES DLE INDICE*/
+.nav > button{
+    display: block;
+    width: 100%;
+    padding: 3.5vh;
+    font-size: 1rem;
+    text-align: center;
+}
+/**************************BUSCADOR******************************/
+/*BUSCADOR*/
+.buscador{
+    display: block;
+    position: fixed;
+    z-index: 6;
+    margin-top: 0vh;
+    background-color: brown;
+    width: 100%;
+    padding: 1vh;
+    transition: 400ms;
+}
+/*INPUT DEL BUSCADOR*/
+#input-search{
+    display: block;
+    position: relative;
+    width: 80%;
+    padding: 1vh;   
+    left: 50%;
+    transform: translate(-50%);
+}
+/*CONTENEDOR QUE DEJA CIEGO LOS RESULTADOS DE BUSQUEDA*/
+#ctn{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index:5;
+    top: 0%;
+    background-color:black;
+    opacity: 70%;
+    transition: 420ms;
+}
+
+/**************************PRODUCTOS*****************************/
+/*LISTA DE PRODUCTOS*/
+.search-results{
+    background-color: #fff;
+    width: 96%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/*PRODUCTO*/
+.producto{
+    display: block;
+    background-color: #fff;
+    border: 1px solid black;
+    margin-bottom: 2vh;
+}
+/*BOTON DE IR A LA TIENDA*/
+#ir-tienda{
+    display: inline-block;
+    position: relative;
+    bottom: 10vh;
+    margin-left: 5vw;
+    padding: 5px;
+}
+/*TEXTO DLE PRODUCTO*/
+.nombre-de-producto{
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    bottom: 10vh;
+}
+/*PRECIO DE LOS PRODUCTOS*/
+.precio-de-productos{
+    display: inline-block;
+    position: relative; 
+    bottom: 10vh;
+    margin-left: 5vw;
+}
+/*IMAGEN DEL PRODUCTO*/
+.img{
+    position: relative;
+    display: inline-block;
+    height: 20vh;
+    width: 20vw;
+    top: 1vh;
+    margin-left: 2vw;
+}
